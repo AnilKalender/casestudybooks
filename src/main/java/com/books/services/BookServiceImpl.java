@@ -51,9 +51,9 @@ public class BookServiceImpl implements IBookService {
 		return repository.save(book);
 	}
 	
-	private List<Book> convertIterableToList(Iterable<Book> asd) {
+	private List<Book> convertIterableToList(Iterable<Book> IterableBooks) {
 		List<Book> books = new ArrayList<Book>();
-		asd.forEach(book -> books.add(book));
+		IterableBooks.forEach(book -> books.add(book));
 		return books;
 	}
 	
